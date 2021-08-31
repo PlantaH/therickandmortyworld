@@ -1,0 +1,96 @@
+ 
+.ficha{
+    border: 0.5rem solid black;
+    padding: 1.5rem;
+    background-color: dimgrey;
+    color: floralwhite;
+    font-size: 1rem;
+}
+.ficha__titulo{    
+    font-size: 1.6rem; 
+    font-family: 'get_schwiftyregular';
+    cursor: pointer;
+}
+
+.ficha__item{
+    font-size: 0.8rem;
+}
+
+.ficha__foto{
+    border-radius:4em
+}
+.ficha__dato{
+    font-weight: bold;
+    color: white !important;
+}
+
+.footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:80px;
+    width:100%;
+    background:black;
+    color: white;
+    font-family: 'get_schwiftyregular';
+    font-size: 2em;
+}
+#verPersonajes, #verCapitulos, #verOtros{
+    cursor: pointer;
+}
+
+#personajes{
+    margin-top: 20px;
+}
+
+.btnMas{
+    font-family: 'get_schwiftyregular';
+}
+ 
+
+/************************
+/* Media Queries 
+*************************/
+/* MOBILE */
+@media (max-width: 767px) {
+   .body{
+    background-image: url(../img/mobile.png) !important;
+   }    
+}
+  
+ 
+
+.icon-3d {
+    cursor: pointer;
+    font-size: 3.5em;
+    font-family: 'get_schwiftyregular';
+    padding: 10px;
+    -webkit-animation: icon3d 200ms 10;
+    animation: icon3d 200ms 10;
+    color: #fff;
+  }
+  .icon-3d:hover {
+    cursor: pointer;  
+    font-size: 3.5em;
+    font-family: 'get_schwiftyregular';
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+  }
+  
+  @keyframes icon3d {
+    0% {
+      text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+    }
+    25% {
+      text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+    }
+    50% {
+      text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+    }
+    75% {
+      text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+    }
+    100% {
+      text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+    }
+  }
